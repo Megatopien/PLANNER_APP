@@ -9,13 +9,13 @@ help:
 	@echo "  make docker-run   Run the project with Docker"
 
 lint:
-	python -m flake8 api || true
+	python3 -m flake8 api || true
 
 test:
 	pytest
 
 run:
-	python -m uvicorn api.app:app --reload
+	python3 -m uvicorn api.app:app --reload
 
 docker-run:
 	docker compose up --build
