@@ -2,6 +2,8 @@
 
 This is the University Course Prerequisite Planner. It is a web app that uses Docker and FastAPI to plan courses for university students based on said courses' prerequisites'.
 
+The main.ipynb file is an exploration of the data. Not all datasets are used, only the "University University of Illinois' Course Prerequisites" dataset.
+
 API Features:
 
 + Check if student can take a course (prerequisite validation)
@@ -38,3 +40,15 @@ Navigate to this directory. Then run these commands:
 + uvicorn app:app --reload
 
 Then go to website: `http://localhost:8000/docs`
+
+Run the following commands when you first open this code and navigate to this folder:
++ cd api
++ pip install -r requirements.txt
++ docker compose up --build
+
+
+Run this code every time you want to access the API:
++ docker compose up
+  + This command runs all the necessary parts(Docker, Neo4j, API)
+  + Overall, it takes 2 minutes to execute
+  + If the port 8000 is already occupied, then run lsof
