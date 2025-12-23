@@ -1,0 +1,22 @@
+## Quick test calls
+
+- Health
+curl http://localhost:8000/api/health
+
+- Course prerequisites
+curl http://localhost:8000/api/courses/AAS%20100/prerequisites
+
+- Eligibility
+curl "http://localhost:8000/api/students/S1/eligibility?course_id=AAS%20100"
+
+- Cycles
+curl http://localhost:8000/api/courses/prerequisites/cycles
+
+- Plan sequence (target list)
+curl "http://localhost:8000/api/students/S1/plan/sequence?target=AAS%20100,AAS%20101"
+
+- Graduation paths (target list)
+curl "http://localhost:8000/api/students/S1/paths/graduation?targets=AAS%20100,AAS%20101"
+
+- Skills
+curl http://localhost:8000/api/courses/AAS%20100/skills

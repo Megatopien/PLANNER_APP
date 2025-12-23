@@ -35,7 +35,7 @@ The datasets come from the following sources:
 Run the following commands when you first open this code and navigate to this folder:
 + cd api
 + pip install -r requirements.txt
-+ docker compose up --build
++ docker compose up --buildd
 
 
 Run this code every time you want to access the API:
